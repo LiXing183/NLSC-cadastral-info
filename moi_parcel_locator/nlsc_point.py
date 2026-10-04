@@ -3,7 +3,7 @@ import base64
 import json
 import math
 import re
-import xml.etree.ElementTree as ET
+from . import safe_xml as ET
 from urllib.parse import urlencode
 from qgis.PyQt.QtCore import pyqtSignal
 from .network_client import NetworkClient

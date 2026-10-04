@@ -2,7 +2,7 @@
 
 A QGIS plugin for querying Taiwan NLSC cadastral information, locating and coloring parcels, copying attributes to spreadsheets, and generating merged fill boundary vectors.
 
-**Version:** 2.0.0 · **QGIS metadata compatibility:** 3.38–4.x · **License:** AGPL-3.0
+**Version:** 2.0.1 · **QGIS metadata compatibility:** 3.38–4.x · **License:** AGPL-3.0
 
 ## 功能 / Features
 

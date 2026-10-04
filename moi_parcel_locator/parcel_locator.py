@@ -11,7 +11,7 @@ from qgis.PyQt.QtCore import Qt, QTimer, QStringListModel
 from qgis.PyQt.QtGui import QColor, QIcon
 from qgis.PyQt.QtNetwork import QNetworkRequest, QNetworkReply
 from qgis.core import QgsNetworkAccessManager
-import xml.etree.ElementTree as ET
+from . import safe_xml as ET
 from pathlib import Path
 from .parcel_input import parcel_numbers
 from .parcel_view import fit_parcels

@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.1 — 2026-10-04
+
+- Replace all untrusted XML parsing with Qt QXmlStreamReader; reject DTDs/custom entities and bound document bytes, node count and depth. No new external dependency.
+- Move two public JavaScript source SHA-256 checksums into documentation. They were provenance hashes, not credentials; lookup tables and source URLs are unchanged.
+- Runtime lookup, cache validation and survey parsing continue to share the same safe parser.
+
+
 ## 2.0.0 — 2026-10-04
 
 - Added comma-separated batch queries and continuous map-click queries, prioritizing location and coloring before attribute completion.
@@ -12,4 +19,4 @@
 - Improved mixed geometry repair, small gaps/fragments, cancellation and bounded memory processing.
 - Release validation: 202 test executions on QGIS 4.2.3; saved 9-, 11- and 31-parcel datasets replayed in EPSG:3826, EPSG:3857 and EPSG:4326.
 
-The publishing preparation updates documentation, license and metadata; runtime code remains identical to the v2.0.0 release.
+The v2.0.1 release updates XML security parsing. Other functionality is retained from v2.0.0.

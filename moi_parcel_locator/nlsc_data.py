@@ -1,7 +1,7 @@
 """NLSC getLandInfoSect response; retain unknown keys instead of guessing."""
 import json
 import re
-import xml.etree.ElementTree as ET
+from . import safe_xml as ET
 from .nlsc_codes import TABLES
 
 

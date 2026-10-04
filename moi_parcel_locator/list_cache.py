@@ -3,7 +3,7 @@ import hashlib
 import json
 import re
 import time
-import xml.etree.ElementTree as ET
+from . import safe_xml as ET
 
 TTL = 86400
 PREFIX = 'moi_parcel_locator/public_lists_v1'

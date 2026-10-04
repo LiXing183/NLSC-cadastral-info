@@ -1,5 +1,5 @@
 """Refresh editable choices after map selection without blocking the query."""
-import xml.etree.ElementTree as ET
+from . import safe_xml as ET
 from qgis.PyQt.QtCore import QObject, QTimer
 from qgis.PyQt.QtNetwork import QNetworkRequest, QNetworkReply
 from qgis.core import QgsNetworkAccessManager

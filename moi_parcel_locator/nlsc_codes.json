@@ -44,14 +44,12 @@
     "website_ajax": {
       "title": "NLSC官方圖台 qt_ajax.js",
       "url": "https://maps.nlsc.gov.tw/T09/js/qt_ajax.js",
-      "version": "2026-10-01下載",
-      "sha256": "b79a37844e7cce62a476a38d4ed3557a380081325e647a9a83ae25b0024c6239"
+      "version": "2026-10-01下載"
     },
     "website_util": {
       "title": "NLSC官方圖台 qt_util.js",
       "url": "https://maps.nlsc.gov.tw/T09/js/qt_util.js",
-      "version": "2026-10-01下載",
-      "sha256": "cb486e9132143ed3ad4b0a78aad8d07401310945525119282f582dc3722e2eaa"
+      "version": "2026-10-01下載"
     }
   },
   "notes": [
