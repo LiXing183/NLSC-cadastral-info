@@ -1,0 +1,21 @@
+[general]
+name=NLSC地籍資訊查詢
+qgisMinimumVersion=3.38
+qgisMaximumVersion=4.99
+description=Query Taiwan NLSC cadastral information, locate and color parcels, and generate merged boundary vectors.
+version=2.0.0
+icon=entrance-ico.svg
+author=Xing Li, OpenAI
+email=li.xing.183.github@icloud.com
+about=Taiwan only. Requires an Internet connection to NLSC public services; availability and rate limits depend on NLSC. No additional Python packages are required beyond the QGIS runtime. Boundary vectors are derived from raster fill images and are not survey-grade parcel boundaries.
+    在 QGIS 中選擇縣市、行政區與地段後，即可輸入地號查詢，支援以逗號分隔多筆地號，也可直接點選地圖查詢宗地。優先完成定位與填色，再補齊屬性資料；依宗地範圍自動調整比例尺。可加入地籍圖、調整界線與地號文字顏色，並設定單筆或多筆宗地填色。依服務回傳內容顯示土地、建物、測繪資訊及公有土地資料。記錄依完成狀態、填色顏色、縣市代碼、地政事務所代碼、段碼及地號數值排序；查詢失敗者以紅字顯示。查詢結果可複製為表格，直接貼入 Excel 等試算表。「生成範圍」可將全部顯示中的填色融合為單一圖徵，加入最上方的「填色範圍」暫存向量圖層。向量由填色影像推算，精度受來源影像解析度限制。資料來源：NLSC國土測繪圖資服務雲。
+category=Web
+experimental=False
+deprecated=False
+
+homepage=https://github.com/LiXing183/NLSC-cadastral-info#readme
+repository=https://github.com/LiXing183/NLSC-cadastral-info
+tracker=https://github.com/LiXing183/NLSC-cadastral-info/issues
+license=AGPL-3.0
+tags=Taiwan,NLSC,cadastre,parcel,boundary
+changelog=2.0.0: Batch parcel queries, priority location and coloring, record sorting, spreadsheet copy, and merged fill boundary generation.
