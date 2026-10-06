@@ -3,9 +3,9 @@ name=NLSC地籍資訊查詢
 qgisMinimumVersion=3.38
 qgisMaximumVersion=4.99
 description=Query Taiwan NLSC cadastral information, locate and color parcels, and generate merged boundary vectors.
-version=2.0.2
+version=2.0.3
 icon=entrance-ico.svg
-author=Li Xing
+author=Xing Li
 email=li.xing.183.github@icloud.com
 about=本外掛使用 Codex 生成。This plugin was generated using Codex.
     Taiwan only. Requires an Internet connection to NLSC public services; availability and rate limits depend on NLSC. No additional Python packages are required beyond the QGIS runtime. Boundary vectors are derived from raster fill images and are not survey-grade parcel boundaries.
@@ -19,4 +19,4 @@ repository=https://github.com/LiXing183/NLSC-cadastral-info
 tracker=https://github.com/LiXing183/NLSC-cadastral-info/issues
 license=AGPL-3.0
 tags=Taiwan,NLSC,cadastre,parcel,boundary
-changelog=2.0.2: Replace three assigned lambda expressions with named functions to resolve Flake8 E731; preserve XML parsing and asynchronous callback behavior.
+changelog=2.0.3: Correct author attribution to Xing Li; retain the Codex generation note. No runtime changes.

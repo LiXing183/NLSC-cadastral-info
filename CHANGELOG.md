@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.3 — 2026-10-07
+
+- Correct author attribution to Xing Li.
+- Retain the Codex generation note. Runtime code and functionality are unchanged from v2.0.2.
+
+
 ## 2.0.2 — 2026-10-07
 
 - Resolve three Flake8 E731 findings by replacing assigned lambdas with named functions.
