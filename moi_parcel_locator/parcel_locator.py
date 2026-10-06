@@ -382,7 +382,9 @@ class ParcelLocatorDialog(QDialog):
         timer.setSingleShot(True)
         timer.setInterval(30000)
         timer.timeout.connect(reply.abort)
-        slot = lambda: self.counties_finished(reply, timer)
+        def slot():
+            return self.counties_finished(reply, timer)
+
         self.county_request = (reply, timer, slot)
         reply.finished.connect(slot)
         timer.start()

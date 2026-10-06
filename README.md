@@ -2,7 +2,7 @@
 
 A QGIS plugin for querying Taiwan NLSC cadastral information, locating and coloring parcels, copying attributes to spreadsheets, and generating merged fill boundary vectors.
 
-**Version:** 2.0.1 · **QGIS metadata compatibility:** 3.38–4.x · **License:** AGPL-3.0
+**Version:** 2.0.2 · **QGIS metadata compatibility:** 3.38–4.x · **License:** AGPL-3.0
 
 ## 功能 / Features
 
@@ -56,5 +56,7 @@ Please use [GitHub Issues](https://github.com/LiXing183/NLSC-cadastral-info/issu
 
 This repository follows the **GNU Affero General Public License v3.0** selected in the upstream repository. See [LICENSE](LICENSE). Third-party data and service terms remain with their respective providers.
 
-Author: Xing Li, OpenAI.  
+Author: Li Xing.  
 Maintainer email: li.xing.183.github@icloud.com
+
+本外掛使用 Codex 生成。This plugin was generated using Codex.

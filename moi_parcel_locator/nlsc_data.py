@@ -7,7 +7,9 @@ from .nlsc_codes import TABLES
 
 def section_info(body, requested):
     root = ET.fromstring(body)
-    local = lambda tag: tag.rsplit('}', 1)[-1]
+    def local(tag):
+        return tag.rsplit('}', 1)[-1]
+
     if local(root.tag).lower() != 'sysdatsecbean':
         raise ValueError('NLSC 未回傳預期的地段測繪 XML。')
     records = [(local(node.tag), (node.text or '').strip()) for node in root]

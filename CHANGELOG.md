@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.2 — 2026-10-07
+
+- Resolve three Flake8 E731 findings by replacing assigned lambdas with named functions.
+- Preserve namespace tag parsing, county-list callback handling and per-request argument binding for point-based dropdown refresh.
+- Retain the XML security protections introduced in v2.0.1.
+
+
 ## 2.0.1 — 2026-10-04
 
 - Replace all untrusted XML parsing with Qt QXmlStreamReader; reject DTDs/custom entities and bound document bytes, node count and depth. No new external dependency.

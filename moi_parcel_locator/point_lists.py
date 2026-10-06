@@ -49,7 +49,9 @@ class PointListRefresh(QObject):
             timer.setSingleShot(True)
             timer.setInterval(30000)
             timer.timeout.connect(reply.abort)
-            slot = lambda r=reply, t=timer, k=kind: self.finished(r, t, k, dict(identity), snapshot, generation)
+            def slot(r=reply, t=timer, k=kind):
+                return self.finished(r, t, k, dict(identity), snapshot, generation)
+
             self.pending.append((reply, timer, slot))
             reply.finished.connect(slot)
             timer.start()
